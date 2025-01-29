@@ -6,7 +6,7 @@ $(document).ready(function(){
 var swiper = new Swiper(".video-banner", {
     slidesPerView: "auto",
     centeredSlides: true,
-    spaceBetween: 30,
+    spaceBetween: 10,
     loop: true,
     slidesPerView: 1.5,
     pagination: {
@@ -14,7 +14,7 @@ var swiper = new Swiper(".video-banner", {
       clickable: true,
     },
     autoplay: {
-        delay: 3000,
+        delay: 5000,
         disableOnInteraction: false,
     },
     on: {

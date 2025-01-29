@@ -95,9 +95,21 @@ body{
 button:focus{
     box-shadow: none !important;
 }
+.container{
+    padding: 0 15px;
+    @media (max-width:767px) {
+        padding: 0 25px;
+    }
+}
 .header{
     padding: 10px 60px;
     background-color: #565656;
+    @media (max-width:1200px) {
+        padding: 10px 28px;
+    }
+    @media (max-width:767px) {
+        padding: 10px 13px;
+    }
     .navbar-brand{
         img{
             max-width: 200px;
@@ -105,6 +117,11 @@ button:focus{
     }
     .navbar-nav{
         padding-left: 50px;
+        @media (max-width:991px) {
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-bottom: 20px;
+        }
         .nav-link{
             color: #ffffff;
             font-size: 18px;
@@ -113,29 +130,91 @@ button:focus{
             }
         }
     }
+    .navbar-toggler{
+        padding: 0;
+        width: 40px;
+        height: 25px;
+        position: relative;
+        border: 0;
+        line-height: 0;
+        span{
+            width: 40px;
+            height: 2px;
+            background-color: #c7c6c5;
+            position: absolute;
+            top: calc(50% - 1px);
+            right: 0;
+            transition: .3s;
+        }
+        &::before,&::after{
+            content: "";
+            width: 40px;
+            height: 2px;
+            background-color: #c7c6c5;
+            position: absolute;
+            right: 0;
+            border: 0;
+            top: 0;
+            transition: .3s;
+        }
+        &::after{
+            bottom: 0;
+            top: auto;
+        }
+        &[aria-expanded="true"]{
+            span{
+                opacity: 0;
+            }
+            &::before{
+                transform: rotate(-45deg) translate(-8px,8px);
+            }
+            &::after{
+                transform: rotate(45deg)  translate(-8px,-8px);
+            }
+        }
+    }
 }
 .revolutionize{
+    @media (max-width:991px) {
+        padding-bottom: 40px;
+    }
     .container{
         padding: 0 24px;
+        @media ((max-width: 575px)) {
+            padding: 0 36px;
+        }
     }
     .section-title{
         margin-bottom: 30px;
+        @media (max-width:991px) {
+            margin-bottom: 0;
+        }
         h4{
             font-size: 22px;
             margin-bottom: 30px;
             text-transform: uppercase;
             font-weight: 700;
+            @media (max-width:991px) {
+                font-size: 16px;   
+                margin-bottom: 20px;
+            }
         }
         img{
             max-width: 550px;
             margin: auto;
             width: 80%;
+            @media (max-width:991px) {
+                max-width: 420px;
+            }
         }
     }
     .row{
         margin-bottom: 80px;
         border-radius: 30px;
         background-color: #565656;
+        @media (max-width:991px) {
+            margin-bottom: 40px;
+        }
         &:nth-child(even){
             background-color: #27286D;
         }
@@ -147,9 +226,23 @@ button:focus{
                 z-index: 1;
                 transition: .3s;
                 left: 0;
+                @media (max-width:991px) {
+                    top: 0;
+                }
                 img{
                     max-width: 100%;
                     border-radius: 30px;
+                    min-height: 350px;
+                    object-fit: cover;          
+                }
+            }
+            .move-image-hide{
+                opacity: 0;
+                img{
+                    max-width: 100%;
+                    border-radius: 30px;
+                    min-height: 350px;
+                    object-fit: cover; 
                 }
             }
             .content{
@@ -164,6 +257,13 @@ button:focus{
                 align-items: flex-start;
                 padding-left: 80px;
                 padding-right: 80px;
+                @media (max-width:991px) {
+                    justify-content: center;
+                    align-items: center;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    text-align: center;
+                }
                 h5{
                     font-size: 14px;
                     color: #fff;
@@ -204,13 +304,24 @@ button:focus{
         }
         .col{
             padding: 0 !important;
+            @media (max-width:991px) {
+                width: 100% !important;
+                max-width: 100% !important;
+                flex: auto;
+            }
             &:first-child{
                 .content{
                     align-items: flex-end;
                     text-align: right;
+                    @media (max-width:991px) {
+                        align-items: center;
+                        text-align: center;
+                    }
                     h5{
                         text-align: right;
-
+                        @media (max-width:991px) {
+                            align-items: center;
+                        }
                     }
                 }
             }
@@ -220,6 +331,10 @@ button:focus{
                 .move-image{
                     position: relative;
                     left: calc(100%);
+                    @media (max-width:991px) {
+                        left: 0;
+                        top: calc(100%);
+                    }
                 }
             }
         }
@@ -232,8 +347,14 @@ button:focus{
         display: flex;
         align-items: center;
         margin-bottom: 70px;
+        @media (max-width:991px) {
+            margin-bottom: 50px;
+        }
         img{
             width: 70px;
+            @media (max-width:991px) {
+                width: 50px;
+            }
         }
         h2{
             font-weight: 700;
@@ -246,8 +367,14 @@ button:focus{
         .col{
             width: 55%;
             flex: auto;
+            @media (max-width:991px) {
+                width: 100%;
+            }
             &:nth-child(2){
                 width: 44%;
+                @media (max-width:991px) {
+                    width: 100%;
+                }
             }
             &>img{
                 width: 100%;
@@ -259,9 +386,18 @@ button:focus{
     }
     .accordion{
         padding-left: 20px;
+        @media (max-width:991px) {
+            padding-left: 0;
+            margin-top: 40px;
+        }
         .accordion-item{
             margin-bottom: 25px;
             border-radius: 20px;
+            @media (max-width:991px) {
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
             .accordion-button{
                 border-radius: 20px;
                 padding: 25px 40px;
@@ -271,6 +407,9 @@ button:focus{
                 background-color: #fff !important;
                 border: 0;
                 box-shadow: none;
+                @media (max-width:991px) {
+                    padding: 20px 25px;
+                }
                 &::after{
                     display: none;
                 }
@@ -309,6 +448,10 @@ button:focus{
             img{
                 width: 55px;
                 margin-right: 40px;
+                @media (max-width:767px) {
+                    width: 35px;
+                    margin-right: 20px;
+                }
             }
             p{
                 font-size: 20px;
@@ -316,6 +459,9 @@ button:focus{
                 font-weight: 400;
                 line-height: 1.2;
                 margin: 0;
+                @media (max-width:767px) {
+                    font-size: 16px;
+                }
             }
         }
     }
@@ -325,9 +471,19 @@ button:focus{
     h2{
         font-size: 50px;
         font-weight: 700;
+        @media (max-width:991px) {
+            font-size: 30px;
+            text-align: center;
+            max-width: 400px;
+            margin: auto;
+            margin-bottom: 40px;
+        }
     }
     form{
         padding-left: 40px;
+        @media (max-width:991px) {
+            padding-left: 0;
+        }
     }
     input,textarea{
         border:1px solid #565656;
@@ -339,6 +495,9 @@ button:focus{
         font-size: 18px;
         margin-bottom: 15px;
         box-shadow: none !important;
+        @media (max-width:991px) {
+            font-size: 14px;
+        }
         &::placeholder{
             color: #000;
         }
@@ -352,10 +511,20 @@ button:focus{
         font-weight: 600;
         color: #fff;
         margin-left: auto;
+        @media (max-width:991px) {
+            font-size: 16px;
+            margin: auto;
+        }
         &:hover{
             background-color: transparent;
             color: #000;
             border-color: #000;
+        }
+    }
+    @media (max-width:991px) {
+        .d-flex{
+            justify-content: center !important;
+            align-items: center;
         }
     }
 }
@@ -363,6 +532,17 @@ button:focus{
 .footer{
     background-color: #565656;
     padding: 80px 0;
+    @media (max-width:991px) {
+        .container{
+            max-width: 100%;
+            padding: 0 40px;
+        }
+    }
+    @media (max-width:767px) {
+        .container{
+            padding: 0 25px;
+        }
+    }
     .col{
         width: 20%;
         flex: auto;
@@ -372,18 +552,44 @@ button:focus{
         &:nth-child(5){
             width: 15%;
         }
+        @media (max-width:767px) {
+            width: 100% !important;
+            justify-content: center;
+            &:not(:last-child){
+                margin-bottom: 30px;
+            }
+        }
     }
     .footer-content{
-        img{
-            max-width: 70px;
+        .footer-logo{
+            display: flex;
+            @media (max-width:767px) {
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            img{
+                max-width: 70px;
+                width: 100%;
+                @media (max-width:767px) {
+                    display: block;
+                    margin: auto;
+                }
+            }
         }
         h4{
             color: #F5F5F5;
             font-size: 22px;
             margin-bottom: 20px;
+            @media (max-width:767px) {
+                text-align: center;
+                margin-bottom: 10px;
+            }
         }
         .nav{
             flex-direction: column;
+            @media (max-width:767px) {
+                align-items: center;
+            }
             .nav-item{
                 padding: 10px 0;
             }
@@ -401,11 +607,29 @@ button:focus{
             img{
                 width: 25px;
             }
+            @media (max-width:767px) {
+                flex-direction: row;
+                justify-content: center;
+                .nav-item{
+                    margin: 0 10px;
+                }
+            }
         }
     }
 }
 .banner{
     padding: 100px 0 60px;
+    @media (max-width:991px) {
+        padding-top: 60px;
+        padding-bottom: 20px;
+    }
+    .container{
+        @media (max-width:991px) {
+            width: 100%;
+            max-width: 100%;
+            padding: 0 25px;
+        }
+    }
     .video-banner{
         border-radius: 30px;
         .swiper-slide{
