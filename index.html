@@ -1,13 +1,354 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bevsense</title>
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="./assets/css/swiper-bundle.min.css" rel="stylesheet" >
+    <link href="./assets/css/style.css" rel="stylesheet" >
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="w-100" src="./assets/image/logo/bevsense-logo.svg" alt="bevsense-logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse w-100" id="navbarNav">
+                <ul class="navbar-nav justify-content-evenly w-100">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Product</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Platform</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Customers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Company</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="banner">
+        <div class="container">
+            <div class="swiper video-banner">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="video">
+                        <video autoplay muted src="./assets/videos/bevsense-1080-BANNER1_1.mp4"></video>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video">
+                        <video muted src="./assets/videos/bevsense-1080-V2-2-BANNER.mp4"></video>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video">
+                        <video muted src="./assets/videos/bevsense-1080-V2-BANNER3.mp4"></video>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="video">
+                        <video muted src="./assets/videos/bevsense-1080-BANNER1_1.mp4"></video>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section class="revolutionize">
+        <div class="container">
+            <div class="section-title text-center py-5">
+                <h4 class="h4">"Revolutionize Your Distribution"</h4>
+                <img src="./assets/image/rae.svg" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col">
+                    <div class="wrapper">
+                        <div class="move-image">
+                            <img src="./assets/image/bevsense-Always-Open.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>DISTRIBUTOR SIDE</h5>
+                            <h2>Always Open:</h2>
+                            <p>Streamline Operations and 
+                                Manage Client Accounts with 
+                                Ease and Flexibility</p>
+                            <a href="#" class="btn">book demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col">
+                    <div class="wrapper">
+                        <div class="content">
+                            <h5>CLIENT SIDE</h5>
+                            <h2>Always Open:</h2>
+                            <p>Clients Enjoy On-the-Go Access 
+                                to Their Favorite Selections, 
+                                Anytime and Anywhere</p>
+                            <a href="#" class="btn">book demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row right">
+                <div class="col-md-6 col">
+                    <div class="wrapper">
+                        <div class="move-image">
+                            <img src="./assets/image/bevsense-Seamless-Authentication.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>DISTRIBUTOR SIDE</h5>
+                            <h2>Seamless Authentication:</h2>
+                            <p>Simplify Ordering and 
+                                Securely Manage Client 
+                                Communications with Ease</p>
+                            <a href="#" class="btn">book demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col">
+                    <div class="wrapper">
+                        <div class="content">
+                            <h5>CLIENT SIDE</h5>
+                            <h2>Seamless Authentication:</h2>
+                            <p>No Usernames.<br>
+                                No Passwords.<br>
+                                Just Text to Order</p>
+                            <a href="#" class="btn">book demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col">
+                    <div class="wrapper">
+                        <div class="move-image">
+                            <img src="./assets/image/bevsense-Smart-Marketing-Campaigns.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <h5>DISTRIBUTOR SIDE</h5>
+                            <h2>Smart Marketing Campaigns:</h2>
+                            <p>Campaigns that Captivate: <br>
+                                Smart, Data-Driven Marketing 
+                                Tailored to Every Customer.</p>
+                            <a href="#" class="btn">watch demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col">
+                    <div class="wrapper">
+                        <div class="content">
+                            <h5>CLIENT SIDE</h5>
+                            <h2>Smart Marketing Campaigns:</h2>
+                            <p>Get Notified Instantly About 
+                                Exclusive Deals and Effortlessly 
+                                Place Orders.</p>
+                            <a href="#" class="btn">watch demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="core-element">
+        <div class="container">
+            <div class="section-title">
+                <img src="./assets/image/logo/fabicon.svg" alt="">
+                <h2>CORE ELEMENTS</h2>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./assets/image/bevsense-CORE-ELEMENTS.jpg" alt="">
+                </div>
+                <div class="col">
+                    <div class="accordion" id="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <img src="./assets/image/integration.svg" alt="">
+                                Seamless Integration
+                            </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <img src="./assets/image/sales-tracking.svg" alt="">
+                                End-to-End Sales Tracking
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                <img src="./assets/image/sales-tracking.svg" alt="">
+                                Al-Driven Sales Pitches: Sell Smarter, Not Harder
+                            </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Inventory-Based Pitches: Leverages your current stock to generate personalized, data-driven sales pitches tai- lored to your customers' needs.</li>
+                                    <li>Targeted Recommendations: Highlights key products and promotions that align with customer preferences and buying habits.</li>
+                                    <li>Time-Saving Automation: Reduces manual effort by creating sales opportunities automatically, so your team can focus on closing deals.</li>
+                                    <li>Enhanced Customer Engagement: Delivers tailored offers that resonate, boosting customer satisfaction and loyalty.</li>
+                                </ul>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="quote">
+        <div class="container">
+            <div class="wrapper">
+                <div class="content">
+                    <img src="./assets/image/quote.svg" alt="">
+                    <p>We optimize your processes automating order taking, providing real-time updates to customers, and managing reservations, reducing errors and improving operational efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="newslatter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2>CONNECT WITH US AND EVOLVE YOUR PROCESS</h2>
+                </div>
+                <div class="col-md-6">
+                    <form action="">
+                        <div class="row">
+                            <div class="col-6">
+                                <input type="text" placeholder="Name" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+                            <div class="col-12">
+                                <textarea name="" rows="3" placeholder="Message" id="" class="form-control"></textarea>
+                            </div>
+                            <div class="col-12 d-flex justify-content-end">
+                                <button class="btn" type="submit">SEND</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-content">
+                        <img src="./assets/image/logo/footer-logo.svg" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-content">
+                        <h4>Conversational AI</h4>
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Product</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Platform</a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-content">
+                        <h4>Customers</h4>
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Customers Stories</a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-content">
+                        <h4>Company</h4>
+                        <ul class="nav">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Newsroom</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Terms & Conditions</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Privacy Policy</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">Cookie Preferences</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="footer-content">
+                        <h4>Social</h4>
+                        <ul class="nav social">
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                <img src="./assets/image/facebook.svg" alt="">
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                <img src="./assets/image/pinterest.svg" alt="">
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                <img src="./assets/image/instagram.svg" alt="">
+                              </a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">
+                                <img src="./assets/image/tiktok.svg" alt="">
+                              </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/jquery-3.7.1.min.js" ></script>
+    <script src="./assets/js/bootstrap.bundle.min.js" ></script>
+    <script src="./assets/js/swiper-bundle.min.js" ></script>
+    <script src="./assets/js/main.js" ></script>
+
+    <!-- <script type="text" src="./assets/js/popper.min.js" ></script> -->
   </body>
 </html>
