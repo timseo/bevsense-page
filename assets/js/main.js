@@ -26,6 +26,8 @@ var swiper = new Swiper(".video-banner", {
           // Remove autoplay from the current slide's video
           var currentSlide = $(this.slides[this.activeIndex]);
           currentSlide.find('video').attr('autoplay','autoplay');
+          var ur = currentSlide.find('video').attr('src');
+          currentSlide.find('video').attr('src', ur);
         }
       }
 });
