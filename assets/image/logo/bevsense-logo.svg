@@ -4,16 +4,11 @@
   <defs>
     <style>
       .st0 {
-        fill: #c7c6c5;
+        fill: #004251;
       }
 
-      .st1 {
-        display: none;
-        fill: #575757;
-      }
     </style>
   </defs>
-  <rect class="st1" x="-192" y="-364" width="1920" height="1080"/>
   <g>
     <g>
       <path class="st0" d="M0,140.8v211.2c58.32,0,105.6-47.28,105.6-105.6S58.32,140.8,0,140.8Z"/>

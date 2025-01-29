@@ -2,12 +2,28 @@ $(document).ready(function(){
     $('.move-image').on('click',function(){
         $(this).parents('.row').toggleClass('right');
     })
-    $('.form-popup-btn').on('click',function(){
-        $('.newslatter-popup').fadeIn();
-    })
     $('.newslatter-popup .close').on('click',function(){
       $('.newslatter-popup').fadeOut();
-  })
+    })
+    jQuery(document).on('click','.newslatter-popup', function(e) {
+      if (e.target !== this)
+        return;
+      e.preventDefault();
+      jQuery('.newslatter-popup').fadeOut(300);
+    });
+    $('.video-popup-btn').on('click',function(e){
+      e.preventDefault();
+        $('.video-popup').fadeIn();
+    })
+    $('.video-popup .close').on('click',function(){
+      $('.video-popup').fadeOut();
+    })
+    jQuery(document).on('click','.video-popup', function(e) {
+      if (e.target !== this)
+        return;
+      e.preventDefault();
+      jQuery('.video-popup').fadeOut(300);
+    });
 })
 var swiper = new Swiper(".video-banner", {
     slidesPerView: "auto",

@@ -108,7 +108,7 @@ button:focus {
 
 .header {
   padding: 10px 60px;
-  background-color: #565656;
+  background-color: #c6c6c6;
 }
 @media (max-width: 1200px) {
   .header {
@@ -447,7 +447,6 @@ button:focus {
 .core-element .row .col > img {
   width: 100%;
   border-radius: 30px;
-  border: 10px solid #27286D;
 }
 .core-element .accordion {
   padding-left: 20px;
@@ -887,4 +886,54 @@ button:focus {
     justify-content: center !important;
     align-items: center;
   }
+}
+
+.video-popup {
+  padding: 25px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  width: 100vw;
+  display: none;
+}
+.video-popup .container {
+  max-width: 700px;
+  padding: 40px 30px 30px;
+  background-color: #e5e5e5;
+  border-radius: 30px;
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+.video-popup .video {
+  width: 100%;
+}
+.video-popup .video video {
+  width: 100%;
+  border-radius: 30px;
+}
+.video-popup .top {
+  padding-bottom: 40px;
+}
+.video-popup .top img {
+  width: 150px;
+}
+.video-popup .top .close {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.video-popup .top .close img {
+  width: 20px;
+}
+.video-popup .top .close:hover {
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
