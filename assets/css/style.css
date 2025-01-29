@@ -123,6 +123,11 @@ button:focus {
 .header .navbar-brand img {
   max-width: 200px;
 }
+@media ((max-width: 575px)) {
+  .header .navbar-brand img {
+    max-width: 130px;
+  }
+}
 .header .navbar-nav {
   padding-left: 50px;
 }
@@ -181,6 +186,27 @@ button:focus {
 .header .navbar-toggler[aria-expanded=true]::after {
   transform: rotate(45deg) translate(-8px, -8px);
 }
+.header a.btn {
+  color: #E5E5E5;
+  background-color: #004251;
+  text-transform: uppercase;
+  border-radius: 50px;
+  padding: 8px 30px;
+  font-size: 16px;
+  border: 2px solid #004251;
+  font-weight: 600;
+}
+.header a.btn:hover {
+  background-color: #E5E5E5;
+  color: #004251;
+  border-color: #E5E5E5;
+}
+@media ((max-width: 575px)) {
+  .header a.btn {
+    padding: 6px 20px;
+    font-size: 12px;
+  }
+}
 
 @media (max-width: 991px) {
   .revolutionize {
@@ -208,6 +234,7 @@ button:focus {
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 700;
+  color: #282828;
 }
 @media (max-width: 991px) {
   .revolutionize .section-title h4 {
@@ -228,15 +255,13 @@ button:focus {
 .revolutionize .row {
   margin-bottom: 80px;
   border-radius: 30px;
-  background-color: #565656;
+  background-color: #282828;
+  transition: background 0.3s ease;
 }
 @media (max-width: 991px) {
   .revolutionize .row {
     margin-bottom: 40px;
   }
-}
-.revolutionize .row:nth-child(even) {
-  background-color: #27286D;
 }
 .revolutionize .row .wrapper {
   position: relative;
@@ -294,14 +319,14 @@ button:focus {
 }
 .revolutionize .row .wrapper .content h5 {
   font-size: 14px;
-  color: #fff;
+  color: #E5E5E5;
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 .revolutionize .row .wrapper .content h2 {
   font-size: 30px;
-  color: #fff;
+  color: #E5E5E5;
   font-weight: 700;
   text-transform: uppercase;
   max-width: 300px;
@@ -309,24 +334,24 @@ button:focus {
 }
 .revolutionize .row .wrapper .content p {
   font-size: 18px;
-  color: #fff;
+  color: #E5E5E5;
   max-width: 280px;
   margin-bottom: 30px;
 }
 .revolutionize .row .wrapper .content a.btn {
-  color: #565656;
-  background-color: #E5E5E5;
+  color: #E5E5E5;
+  background-color: #004251;
   text-transform: uppercase;
   border-radius: 50px;
   padding: 8px 30px;
   font-size: 16px;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #004251;
   font-weight: 600;
 }
 .revolutionize .row .wrapper .content a.btn:hover {
-  background-color: transparent;
-  color: #fff;
-  border-color: #fff;
+  background-color: #E5E5E5;
+  color: #004251;
+  border-color: #E5E5E5;
 }
 .revolutionize .row .col {
   padding: 0 !important;
@@ -355,6 +380,12 @@ button:focus {
   .revolutionize .row .col:first-child .content h5 {
     align-items: center;
   }
+}
+.revolutionize .row .col:first-child .content h5, .revolutionize .row .col:first-child .content h2, .revolutionize .row .col:first-child .content p {
+  color: #282828;
+}
+.revolutionize .row.right {
+  background-color: #c6c6c6;
 }
 .revolutionize .row.right .wrapper .move-image {
   position: relative;
@@ -394,6 +425,7 @@ button:focus {
   font-size: 30px;
   margin: 0;
   margin-left: 20px;
+  color: #282828;
 }
 .core-element .row .col {
   width: 55%;
@@ -444,6 +476,7 @@ button:focus {
   background-color: #fff !important;
   border: 0;
   box-shadow: none;
+  color: #282828;
 }
 @media (max-width: 991px) {
   .core-element .accordion .accordion-item .accordion-button {
@@ -499,6 +532,7 @@ button:focus {
   font-weight: 400;
   line-height: 1.2;
   margin: 0;
+  color: #282828;
 }
 @media (max-width: 767px) {
   .quote .wrapper .content p {
@@ -512,6 +546,7 @@ button:focus {
 .newslatter h2 {
   font-size: 50px;
   font-weight: 700;
+  color: #282828;
 }
 @media (max-width: 991px) {
   .newslatter h2 {
@@ -553,13 +588,13 @@ button:focus {
   color: #000;
 }
 .newslatter button.btn {
-  background-color: #565656;
+  background-color: #004251;
   border-radius: 50px;
   padding: 10px 45px;
   font-size: 20px;
-  border: 2px solid #565656;
+  border: 2px solid #004251;
   font-weight: 600;
-  color: #fff;
+  color: #E5E5E5;
   margin-left: auto;
 }
 @media (max-width: 991px) {
@@ -569,9 +604,9 @@ button:focus {
   }
 }
 .newslatter button.btn:hover {
-  background-color: transparent;
-  color: #000;
-  border-color: #000;
+  background-color: #E5E5E5;
+  color: #004251;
+  border-color: #E5E5E5;
 }
 @media (max-width: 991px) {
   .newslatter .d-flex {
