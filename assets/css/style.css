@@ -221,9 +221,6 @@ button:focus {
     padding: 0 36px;
   }
 }
-.revolutionize .section-title {
-  margin-bottom: 30px;
-}
 @media (max-width: 991px) {
   .revolutionize .section-title {
     margin-bottom: 0;
@@ -231,7 +228,6 @@ button:focus {
 }
 .revolutionize .section-title h4 {
   font-size: 22px;
-  margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: 700;
   color: #282828;
@@ -239,13 +235,13 @@ button:focus {
 @media (max-width: 991px) {
   .revolutionize .section-title h4 {
     font-size: 16px;
-    margin-bottom: 20px;
   }
 }
 .revolutionize .section-title img {
-  max-width: 550px;
+  max-width: 350px;
   margin: auto;
   width: 80%;
+  margin-bottom: 20px;
 }
 @media (max-width: 991px) {
   .revolutionize .section-title img {
@@ -714,7 +710,7 @@ button:focus {
 }
 
 .banner {
-  padding: 60px 0 60px;
+  padding: 60px 0 40px;
 }
 @media (max-width: 991px) {
   .banner {
