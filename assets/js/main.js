@@ -2,6 +2,12 @@ $(document).ready(function(){
     $('.move-image').on('click',function(){
         $(this).parents('.row').toggleClass('right');
     })
+    $('.form-popup-btn').on('click',function(){
+        $('.newslatter-popup').fadeIn();
+    })
+    $('.newslatter-popup .close').on('click',function(){
+      $('.newslatter-popup').fadeOut();
+  })
 })
 var swiper = new Swiper(".video-banner", {
     slidesPerView: "auto",
