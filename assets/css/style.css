@@ -612,7 +612,7 @@ button:focus {
 
 .footer {
   background-color: #565656;
-  padding: 80px 0;
+  padding: 80px 0 30px;
 }
 @media (max-width: 991px) {
   .footer .container {
@@ -708,6 +708,12 @@ button:focus {
     margin: 0 10px;
   }
 }
+.footer .copyright {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 40px;
+  color: #E5E5E5;
+}
 
 .banner {
   padding: 60px 0 40px;
@@ -789,6 +795,7 @@ button:focus {
   -webkit-backdrop-filter: blur(10px);
   width: 100vw;
   display: flex;
+  display: none;
   align-items: center;
 }
 .newslatter-popup .container {
