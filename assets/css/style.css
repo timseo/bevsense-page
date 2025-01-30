@@ -120,6 +120,9 @@ button:focus {
     padding: 10px 13px;
   }
 }
+.header .navbar-brand {
+  width: 50%;
+}
 .header .navbar-brand img {
   max-width: 200px;
 }

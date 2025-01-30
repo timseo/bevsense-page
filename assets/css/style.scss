@@ -111,6 +111,7 @@ button:focus{
         padding: 10px 13px;
     }
     .navbar-brand{
+        width: 50%;
         img{
             max-width: 200px;
             @media ((max-width: 575px)) {
