@@ -665,6 +665,9 @@ button:focus{
         padding-top: 60px;
         padding-bottom: 20px;
     }
+    @media (max-width:767px) {
+        padding-top: 40px;
+    }
     .container{
         @media (max-width:991px) {
             width: 100%;
@@ -674,14 +677,26 @@ button:focus{
     }
     .video-banner{
         border-radius: 30px;
+        @media (max-width:576px) {
+            border-radius: 20px;
+        }
         .swiper-slide{
             border-radius: 30px;
+            @media (max-width:576px) {
+                border-radius: 20px;
+            }
             .video{
                 border-radius: 30px;
                 line-height: 0;
+                @media (max-width:576px) {
+                    border-radius: 20px;
+                }
                 video{
                     border-radius: 30px;
                     width: 100%;
+                    @media (max-width:576px) {
+                        border-radius: 20px;
+                    }
                 }
             }
         }

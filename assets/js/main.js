@@ -39,38 +39,46 @@ $(document).ready(function(){
           $(this).attr('src',$(this).attr('data-mobile'))
         }
       })
+      const i_firstVideo = document.querySelector('.swiper-slide-active video');
+      if (i_firstVideo) {
+        i_firstVideo.currentTime = 0;
+        i_firstVideo.play();
+      }
     })
 
 })
 var swiper = new Swiper(".video-banner", {
-    slidesPerView: "auto",
-    centeredSlides: true,
-    spaceBetween: 10,
-    loop: true,
-    slidesPerView: 1.5,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    on: {
-        slideChange: function () {
-          // Remove autoplay from the previous slide's video
-          var previousSlide = $(this.slides[this.previousIndex]);
-          previousSlide.find('video').removeAttr('autoplay');
-    
-          // Remove autoplay from the current slide's video
-          var currentSlide = $(this.slides[this.activeIndex]);
-          currentSlide.find('video').attr('autoplay','autoplay');
-          if($(window).width()>767){
-          var ur = currentSlide.find('video').attr('data-desktop');
-          }else{
-            var ur = currentSlide.find('video').attr('data-mobile');
-          }
-          currentSlide.find('video').attr('src', ur);
-        }
+  slidesPerView: "auto",  
+  centeredSlides: true,
+  spaceBetween: 10,
+  loop: true,
+  slidesPerView: 1.5,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  on: {
+    slideChangeTransitionEnd: function () {
+      const slides = document.querySelectorAll('.swiper-slide video');
+      slides.forEach(video => {
+        video.pause();  
+        video.currentTime = 0;
+      });
+      const activeSlide = document.querySelector('.swiper-slide-active video');
+      if (activeSlide) {
+        activeSlide.play();
       }
+    }
+  }
 });
+window.onload = () => {
+  const firstVideo = document.querySelector('.swiper-slide-active video');
+  if (firstVideo) {
+    firstVideo.currentTime = 0;
+    firstVideo.play();
+  }
+};

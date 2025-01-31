@@ -734,6 +734,11 @@ button:focus {
     padding-bottom: 20px;
   }
 }
+@media (max-width: 767px) {
+  .banner {
+    padding-top: 40px;
+  }
+}
 @media (max-width: 991px) {
   .banner .container {
     width: 100%;
@@ -744,16 +749,36 @@ button:focus {
 .banner .video-banner {
   border-radius: 30px;
 }
+@media (max-width: 576px) {
+  .banner .video-banner {
+    border-radius: 20px;
+  }
+}
 .banner .video-banner .swiper-slide {
   border-radius: 30px;
+}
+@media (max-width: 576px) {
+  .banner .video-banner .swiper-slide {
+    border-radius: 20px;
+  }
 }
 .banner .video-banner .swiper-slide .video {
   border-radius: 30px;
   line-height: 0;
 }
+@media (max-width: 576px) {
+  .banner .video-banner .swiper-slide .video {
+    border-radius: 20px;
+  }
+}
 .banner .video-banner .swiper-slide .video video {
   border-radius: 30px;
   width: 100%;
+}
+@media (max-width: 576px) {
+  .banner .video-banner .swiper-slide .video video {
+    border-radius: 20px;
+  }
 }
 .banner .swiper-pagination {
   position: static !important;
