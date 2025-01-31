@@ -807,7 +807,7 @@ button:focus {
   border-radius: 15px;
 }
 .banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
-  animation: bullet 5s linear forwards;
+  animation: bullet 10s linear forwards;
 }
 
 @keyframes bullet {
