@@ -443,6 +443,13 @@ button:focus{
                     height: 30px;
                     margin-right: 20px;
                 }
+
+                span span{
+                    display: none;
+                }
+                &[aria-expanded="true"] span span{
+                    display: inline;
+                }
             }
             .accordion-body{
                 padding-top: 0;
@@ -825,14 +832,14 @@ button:focus{
     -webkit-backdrop-filter: blur(10px);
     width: 100vw;
     display: none;
+    overflow-y: auto;
     .container{
-        max-width: 700px;
         padding: 40px 30px 30px;
         background-color: #e5e5e5;
         border-radius: 30px;
         position: relative;
-        top: 50vh;
-        transform: translateY(-50%);
+        // top: 50vh;
+        // transform: translateY(-50%);
     }
     .video{
         width: 100%;

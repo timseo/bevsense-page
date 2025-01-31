@@ -24,6 +24,23 @@ $(document).ready(function(){
       e.preventDefault();
       jQuery('.video-popup').fadeOut(300);
     });
+    $('.video-banner video').each(function(){
+      if($(window).width()>767){
+        $(this).attr('src',$(this).attr('data-desktop'))
+      }else{
+        $(this).attr('src',$(this).attr('data-mobile'))
+      }
+    })
+    $(window).resize(function(){
+      $('.video-banner video').each(function(){
+        if($(window).width()>767){
+          $(this).attr('src',$(this).attr('data-desktop'))
+        }else{
+          $(this).attr('src',$(this).attr('data-mobile'))
+        }
+      })
+    })
+
 })
 var swiper = new Swiper(".video-banner", {
     slidesPerView: "auto",
@@ -48,7 +65,11 @@ var swiper = new Swiper(".video-banner", {
           // Remove autoplay from the current slide's video
           var currentSlide = $(this.slides[this.activeIndex]);
           currentSlide.find('video').attr('autoplay','autoplay');
-          var ur = currentSlide.find('video').attr('src');
+          if($(window).width()>767){
+          var ur = currentSlide.find('video').attr('data-desktop');
+          }else{
+            var ur = currentSlide.find('video').attr('data-mobile');
+          }
           currentSlide.find('video').attr('src', ur);
         }
       }

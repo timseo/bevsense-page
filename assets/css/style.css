@@ -489,6 +489,12 @@ button:focus {
   height: 30px;
   margin-right: 20px;
 }
+.core-element .accordion .accordion-item .accordion-button span span {
+  display: none;
+}
+.core-element .accordion .accordion-item .accordion-button[aria-expanded=true] span span {
+  display: inline;
+}
 .core-element .accordion .accordion-item .accordion-body {
   padding-top: 0;
   font-size: 14px;
@@ -907,15 +913,13 @@ button:focus {
   -webkit-backdrop-filter: blur(10px);
   width: 100vw;
   display: none;
+  overflow-y: auto;
 }
 .video-popup .container {
-  max-width: 700px;
   padding: 40px 30px 30px;
   background-color: #e5e5e5;
   border-radius: 30px;
   position: relative;
-  top: 50vh;
-  transform: translateY(-50%);
 }
 .video-popup .video {
   width: 100%;
