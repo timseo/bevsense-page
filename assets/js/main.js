@@ -58,7 +58,7 @@ var swiper = new Swiper(".video-banner", {
     clickable: true,
   },
   autoplay: {
-    delay: 10000,
+    delay: 14000,
     disableOnInteraction: false,
   },
   breakpoints: {

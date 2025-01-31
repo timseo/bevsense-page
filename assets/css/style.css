@@ -572,7 +572,7 @@ button:focus {
 .newslatter input, .newslatter textarea {
   border: 1px solid #565656;
   padding: 8px 20px;
-  color: #000000;
+  color: #282828;
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: 600;
@@ -586,10 +586,10 @@ button:focus {
   }
 }
 .newslatter input::-moz-placeholder, .newslatter textarea::-moz-placeholder {
-  color: #000;
+  color: #e5e5e5;
 }
 .newslatter input::placeholder, .newslatter textarea::placeholder {
-  color: #000;
+  color: #e5e5e5;
 }
 .newslatter button.btn {
   color: #E5E5E5;
@@ -807,7 +807,7 @@ button:focus {
   border-radius: 15px;
 }
 .banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active::after {
-  animation: bullet 10s linear forwards;
+  animation: bullet 14s linear forwards;
 }
 
 @keyframes bullet {
@@ -895,7 +895,7 @@ button:focus {
 .newslatter-popup input, .newslatter-popup textarea {
   border: 1px solid #565656;
   padding: 8px 20px;
-  color: #000000;
+  color: #282828;
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: 600;
@@ -909,10 +909,10 @@ button:focus {
   }
 }
 .newslatter-popup input::-moz-placeholder, .newslatter-popup textarea::-moz-placeholder {
-  color: #000;
+  color: #e5e5e5;
 }
 .newslatter-popup input::placeholder, .newslatter-popup textarea::placeholder {
-  color: #000;
+  color: #e5e5e5;
 }
 .newslatter-popup button.btn {
   color: #E5E5E5;

@@ -522,7 +522,7 @@ button:focus{
     input,textarea{
         border:1px solid #565656;
         padding: 8px 20px;
-        color: #000000;
+        color: #282828;
         border-radius: 20px;
         text-transform: uppercase;
         font-weight: 600;
@@ -533,7 +533,7 @@ button:focus{
             font-size: 14px;
         }
         &::placeholder{
-            color: #000;
+            color: #e5e5e5;
         }
     }
     button.btn{
@@ -725,7 +725,7 @@ button:focus{
                 width: 60px;
                 border-radius: 15px;
                 &::after{
-                    animation: bullet 10s linear forwards;
+                    animation: bullet 14s linear forwards;
                 }
             }
         }
@@ -804,7 +804,7 @@ button:focus{
     input,textarea{
         border:1px solid #565656;
         padding: 8px 20px;
-        color: #000000;
+        color: #282828;
         border-radius: 20px;
         text-transform: uppercase;
         font-weight: 600;
@@ -815,7 +815,7 @@ button:focus{
             font-size: 14px;
         }
         &::placeholder{
-            color: #000;
+            color: #e5e5e5;
         }
     }
     button.btn{
