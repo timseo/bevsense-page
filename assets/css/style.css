@@ -830,7 +830,6 @@ button:focus {
   -webkit-backdrop-filter: blur(10px);
   width: 100vw;
   display: flex;
-  display: none;
   align-items: center;
 }
 .newslatter-popup .container {
