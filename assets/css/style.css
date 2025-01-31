@@ -819,7 +819,7 @@ button:focus {
   }
 }
 .newslatter-popup {
-  padding: 70px 0;
+  padding: 70px 15px;
   position: fixed;
   z-index: 9999;
   top: 0;
@@ -838,6 +838,11 @@ button:focus {
   background-color: #e5e5e5;
   border-radius: 30px;
   position: relative;
+}
+@media (max-width: 576px) {
+  .newslatter-popup .container {
+    padding: 30px;
+  }
 }
 .newslatter-popup .top {
   padding-bottom: 20px;
@@ -859,6 +864,12 @@ button:focus {
 .newslatter-popup .top .close:hover {
   opacity: 1;
 }
+@media (max-width: 576px) {
+  .newslatter-popup .top .close {
+    right: 30px;
+    top: 30px;
+  }
+}
 .newslatter-popup h2 {
   font-size: 30px;
   font-weight: 700;
@@ -873,6 +884,12 @@ button:focus {
     max-width: 400px;
     margin: auto;
     margin-bottom: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .newslatter-popup h2 {
+    font-size: 20px;
+    max-width: 300px;
   }
 }
 .newslatter-popup input, .newslatter-popup textarea {
@@ -926,7 +943,7 @@ button:focus {
 }
 
 .video-popup {
-  padding: 25px;
+  padding: 25px 15px;
   position: fixed;
   z-index: 9999;
   top: 0;

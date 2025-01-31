@@ -52,8 +52,7 @@ var swiper = new Swiper(".video-banner", {
   centeredSlides: true,
   spaceBetween: 10,
   loop: true,
-  slidesPerView: 1.5,
-  // autoHeight: true,
+  slidesPerView: 1,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -62,11 +61,11 @@ var swiper = new Swiper(".video-banner", {
     delay: 5000,
     disableOnInteraction: false,
   },
-  // breakpoints: {
-  //   768: {
-  //     slidesPerView: 1,
-  //   }
-  // },
+  breakpoints: {
+    768: {
+      slidesPerView: 1.5,
+    }
+  },
   on: {
     slideChangeTransitionEnd: function () {
       const slides = document.querySelectorAll('.swiper-slide video');

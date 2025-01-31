@@ -737,7 +737,7 @@ button:focus{
 }
 
 .newslatter-popup{
-    padding: 70px 0;
+    padding: 70px 15px;
     position: fixed;
     z-index: 9999;
     top: 0;
@@ -755,6 +755,9 @@ button:focus{
         background-color: #e5e5e5;
         border-radius: 30px;
         position: relative;
+        @media (max-width:576px) {
+            padding: 30px;
+        }
     }
     .top{
         padding-bottom: 20px;
@@ -774,6 +777,10 @@ button:focus{
             &:hover{
                 opacity: 1;
             }
+            @media (max-width:576px) {
+                right: 30px;
+                top: 30px;
+            }
         }
     }
     h2{
@@ -788,6 +795,10 @@ button:focus{
             max-width: 400px;
             margin: auto;
             margin-bottom: 20px;
+        }
+        @media (max-width:576px) {
+            font-size: 20px;
+            max-width: 300px;
         }
     }
     input,textarea{
@@ -835,7 +846,7 @@ button:focus{
     }
 }
 .video-popup{
-    padding: 25px;
+    padding: 25px 15px;
     position: fixed;
     z-index: 9999;
     top: 0;
