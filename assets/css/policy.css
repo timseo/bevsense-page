@@ -1,0 +1,33 @@
+.policies {
+    background-color: #212529;
+    .container{
+        width: 85%;
+        color: #e5e5e5;
+        font-family: figtree;
+    }
+    h1 {
+        padding-top: 50px;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    h3 {
+       font-size: 15px;
+    }
+    p {
+        font-size: 12px;
+    }
+    li {
+        font-size: 12px;
+    }
+    a {
+        color: #e5f5f5;
+    }
+    a:hover {
+        color: #c6c6c6;
+    }
+    padding-bottom: 50px;
+}
