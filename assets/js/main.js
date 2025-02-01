@@ -32,13 +32,6 @@ $(document).ready(function(){
       }
     })
     $(window).resize(function(){
-      $('.video-banner video').each(function(){
-        if($(window).width()>767){
-          $(this).attr('src',$(this).attr('data-desktop'))
-        }else{
-          $(this).attr('src',$(this).attr('data-mobile'))
-        }
-      })
       const i_firstVideo = document.querySelector('.swiper-slide-active video');
       if (i_firstVideo) {
         i_firstVideo.currentTime = 0;
