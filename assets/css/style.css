@@ -989,3 +989,11 @@ button:focus {
 .video-popup .top .close:hover {
   opacity: 1;
 }/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 768px) {
+  .forced-height {
+    height: 600px!important; /* Adjust as needed */
+    max-height: 600px!important;
+    min-height: 600px!important; /* Example: Full viewport height */
+  }
+}
