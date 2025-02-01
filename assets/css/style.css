@@ -748,6 +748,7 @@ button:focus {
 }
 .banner .video-banner {
   border-radius: 30px;
+  -webkit-overflow-scrolling: touch;
 }
 @media (max-width: 576px) {
   .banner .video-banner {
@@ -784,6 +785,11 @@ button:focus {
   position: absolute;
   top: 0;
   left: 0;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  pointer-events: none;
 }
 @media (max-width: 576px) {
   .banner .video-banner .swiper-slide .video video {
