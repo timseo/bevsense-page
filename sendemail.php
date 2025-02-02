@@ -1,8 +1,8 @@
 <?php
 
 // Define some constants
-define( "RECIPIENT_NAME", "David" );
-define( "RECIPIENT_EMAIL", "info@bevsense.com" );
+define( "RECIPIENT_NAME", "BevSense" );
+define( "RECIPIENT_EMAIL", "wilharm@bevsense.com" );
 
 
 // Read the form values
@@ -15,7 +15,7 @@ $senderMessage = isset( $_POST['message'] ) ? preg_replace( "/[^\.\-\_\@a-zA-Z0-
 if ( $senderEmail) {
   $recipient = RECIPIENT_NAME . " <" . RECIPIENT_EMAIL . ">";
   $headers = "From: " . $senderEmail . "";
-  $msgBody = "Name: ". $senderName ."\nEmail: ". $senderEmail . "\nMessage:". $senderMessage ."";
+  $msgBody = "Name: ". $senderName ." <br>Email: ". $senderEmail . " <br>Message:". $senderMessage ."";
   $success = mail( $recipient, $headers, $msgBody );
 
   //Set Location After Successsfull Submission
