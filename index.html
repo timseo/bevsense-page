@@ -428,7 +428,68 @@
     <script src="./assets/js/bootstrap.bundle.min.js" ></script>
     <script src="./assets/js/swiper-bundle.min.js" ></script>
     <script src="./assets/js/main.js" ></script>
-
-    <!-- <script type="text" src="./assets/js/popper.min.js" ></script> -->
+    <script>
+        // Function to get cookie value by name
+        function getCookie(name) {
+            let cookies = document.cookie.split('; ');
+            for (let cookie of cookies) {
+                let [key, value] = cookie.split('=');
+                if (key === name) return value;
+            }
+            return null;
+        }
+      
+        // Function to get query parameter from URL
+        function getQueryParam(param) {
+            let urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+      
+        document.addEventListener("DOMContentLoaded", function () {
+            let popup = document.querySelector(".newslatter-popup");
+            let message = getQueryParam("message"); // Get message from URL
+      
+            // 1️⃣ Hide popup if cookie exists
+            if (getCookie("form_submitted") === "true") {
+                if (popup) {
+                    popup.style.display = "none";
+                }
+            } else {
+                if (popup) {
+                    popup.style.display = "block"; // Ensure popup is visible if no cookie
+                }
+            }
+      
+            // 2️⃣ Show success or error message if needed
+            if (message === "Successfull" || message === "Failed" || message === "successfull" || message === "failed") {
+                let messageDiv = document.createElement("div");
+                messageDiv.textContent = message === "Successfull" ? "Your message was successfully sent!" : "Something went wrong. Please try again.";
+                
+                // Apply styles for notification
+                messageDiv.style.position = "fixed";
+                messageDiv.style.top = "20px";
+                messageDiv.style.right = "20px";
+                messageDiv.style.padding = "10px 20px";
+                messageDiv.style.borderRadius = "5px";
+                messageDiv.style.color = "#fff";
+                messageDiv.style.boxShadow = "0px 0px 10px rgba(0,0,0,0.2)";
+                messageDiv.style.fontSize = "16px";
+                messageDiv.style.zIndex = "9999";
+      
+                if (message === "Successfull" || message === "successfull") {
+                    messageDiv.style.backgroundColor = "#4CAF50"; // Green for success
+                } else {
+                    messageDiv.style.backgroundColor = "#FF5733"; // Red for error
+                }
+      
+                document.body.appendChild(messageDiv);
+      
+                // Remove message after 5 seconds
+                setTimeout(() => {
+                    messageDiv.remove();
+                }, 2000);
+            }
+        });
+      </script>
   </body>
 </html>

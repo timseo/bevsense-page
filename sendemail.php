@@ -19,9 +19,16 @@ if ( $senderEmail) {
   $success = mail( $recipient, $headers, $msgBody );
 
   //Set Location After Successsfull Submission
-  header('Location: index.html?message=Successfull');
-}
+  // header('Location: index.html?message=Successfull');
+  if ($success) {
+    // Set a cookie for 15 days (15 days * 24 hours * 60 minutes * 60 seconds)
+    setcookie("form_submitted", "true", time() + (15 * 24 * 60 * 60), "/");
 
+    // Redirect with success message
+    header('Location: index.html?message=Successfull');
+    exit;
+  } 
+}
 else{
 	//Set Location After Unsuccesssfull Submission
   	header('Location: index.html?message=Failed');
