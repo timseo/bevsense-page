@@ -463,7 +463,7 @@
             // 2️⃣ Show success or error message if needed
             if (message === "Successfull" || message === "Failed" || message === "successfull" || message === "failed") {
                 let messageDiv = document.createElement("div");
-                messageDiv.textContent = message === "Successfull" ? "Your message was successfully sent!" : "Something went wrong. Please try again.";
+                messageDiv.textContent = message === "successfull" ? "Your message was successfully sent!" : "Something went wrong. Please try again.";
                 
                 // Apply styles for notification
                 messageDiv.style.position = "fixed";
@@ -477,9 +477,9 @@
                 messageDiv.style.zIndex = "9999";
       
                 if (message === "Successfull" || message === "successfull") {
-                    messageDiv.style.backgroundColor = "#4CAF50"; // Green for success
+                    messageDiv.style.backgroundColor = "#004251"; // Green for success
                 } else {
-                    messageDiv.style.backgroundColor = "#FF5733"; // Red for error
+                    messageDiv.style.backgroundColor = "#ff5b5b"; // Red for error
                 }
       
                 document.body.appendChild(messageDiv);

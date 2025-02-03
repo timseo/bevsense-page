@@ -25,13 +25,13 @@ if ( $senderEmail) {
     setcookie("form_submitted", "true", time() + (15 * 24 * 60 * 60), "/");
 
     // Redirect with success message
-    header('Location: index.html?message=Successfull');
+    header('Location: index.html?message=successfull');
     exit;
   } 
 }
 else{
 	//Set Location After Unsuccesssfull Submission
-  	header('Location: index.html?message=Failed');
+  	header('Location: index.html?message=failed');
 }
 
 ?>
