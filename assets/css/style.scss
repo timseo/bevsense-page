@@ -761,7 +761,7 @@ button:focus{
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     width: 100vw;
-    display: flex;
+    display: none;
     align-items: center;
     .container{
         max-width: 500px;
