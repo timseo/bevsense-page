@@ -80,3 +80,23 @@ window.onload = () => {
     firstVideo.play();
   }
 };
+
+function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+        let date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000)); // Convert days to milliseconds
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+}
+
+// Add event listener to button click
+document.addEventListener("DOMContentLoaded", function () {
+    let button = document.getElementById("close-newsletter"); // Change ID to match your button
+    if (button) {
+        button.addEventListener("click", function () {
+            setCookie("form_submitted", "true", 15); // Set cookie for 15 days
+        });
+    }
+});
